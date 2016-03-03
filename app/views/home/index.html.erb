@@ -1,0 +1,30 @@
+<div class="col s12">
+	 <h1 class="center-align">My Projects</h1>
+</div>
+
+<div class="col s10 offset-s2">
+	<div class="row">
+			<div class="row">
+				<div class="col s12">
+					<ul class="tabs">
+						<li class="tab col s3"><a href="#test1">Features</a></li>
+						<li class="tab col s3"><a class="active" href="#test2">Stack</a></li>
+						<li class="tab col s3"><a href="#test4">Mistakes</a></li>
+					</ul>
+				</div>
+				<!-- <div id="test1" class="col s12">Test 1</div> -->
+				<!-- <div id="test2" class="col s12">Test 2</div> -->
+				<!-- <div id="test4" class="col s12">Test 4</div> -->
+			</div>
+	</div>
+</div>
+
+<div class="col s2">
+	<div class="collection">
+		<% @projects.each do |p| %>
+			<a href="#!" class="collection-item"><%= p.title %></a>
+		<% end %>
+	</div>
+</div>
+
+
